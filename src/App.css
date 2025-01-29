@@ -21,11 +21,26 @@
   border-radius: 20%;
   font-family: 'Arima', cursive;
   color: #51170b;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
+}
+
+.sub-buttons {
+  background-color: transparent;
+  background-size: cover;
+  padding-bottom: 3.4%;
+  height: 170px;
+  background-position: center;
+  border-color: transparent;
+  font-family: 'Arima', cursive;
+  color: #51170b;
+}
+
+.sub-buttons:hover {
+  color: #9a3923;
 }
 
 .actual-button:hover {
-  font-size: 1.4vw;
+  font-size: 1.15vw;
   color:#9a3923;
 }
 

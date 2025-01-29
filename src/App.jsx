@@ -12,6 +12,7 @@ import shipImage from './assets/hopper_ship.png'
 import xImage from './assets/X.png'
 import Tracks from './pages/Tracks.jsx';
 import Environment from './pages/Environment.jsx';
+import Apply from './pages/Apply.jsx';
 
 const stars = [
   { left: 23, top: 8, size: 9 },
@@ -53,12 +54,16 @@ const App = () => {
         <h1 className={animate ? 'slide-in-left dates' : 'dates'}>02.22 - 02.23</h1>
         <div className='apply-button'>
           <button style={{zIndex: '8888', backgroundImage: `url(${applyImage})`}}  className="actual-button">
-            <h1><a rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}} target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScfGGh5Z0vCOZdxE2o25L-ytRtje0S4OO9qMSzMhtq6FDwSww/viewform?usp=sf_link">Apply</a></h1>
+            <h1><a rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}} target='_blank' href="https://www3.cs.stonybrook.edu/~wics/pages/index.html">by WiCS</a></h1>
           </button>
         </div>
         <div className='pages'>
+          
           <div id='about'>
             <About/>
+          </div>
+          <div id='apply'>
+            <Apply/>
           </div>
           <div id="environment">
             <Environment/>

@@ -21,7 +21,19 @@ const Nav = () => {
         <div className="bar"></div>
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><h1><a rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}}target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScfGGh5Z0vCOZdxE2o25L-ytRtje0S4OO9qMSzMhtq6FDwSww/viewform?usp=sf_link">Apply</a></h1></li>
+        {/* <li><h1><a rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}}target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScfGGh5Z0vCOZdxE2o25L-ytRtje0S4OO9qMSzMhtq6FDwSww/viewform?usp=sf_link">Apply</a></h1></li> */}
+        
+        <li>
+          <button style={{backgroundColor: 'transparent', borderColor: 'transparent'}}onClick={() => {
+            const element = document.getElementById('apply');
+            element?.scrollIntoView({
+              behavior: 'smooth'
+            })
+          }}>
+            <h1 href="#apply">Apply</h1>
+          </button>
+        </li>
+
         <li>
           <button style={{backgroundColor: 'transparent', borderColor: 'transparent'}}onClick={() => {
             const element = document.getElementById('about');
